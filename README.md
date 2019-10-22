@@ -41,7 +41,7 @@ By default it has two communication.
 bindservice() is used to start service & unbindservice() or stopself() are used to stop service.
 Runs on Main Ui thread
 
-Foreground Service
+### Foreground Service
 
 This service is always uses the notification to notify the user that some background operation is going on (Such as Play Music, Download files)
 Foreground service is always noticeable to user, That is the user aware of foreground service.
