@@ -41,7 +41,7 @@ By default it has two communication.
 bindservice() is used to start service & unbindservice() or stopself() are used to stop service.
 Runs on Main Ui thread
 
-Foreground Service
+### Foreground Service
 
 This service is always uses the notification to notify the user that some background operation is going on (Such as Play Music, Download files)
 Foreground service is always noticeable to user, That is the user aware of foreground service.
@@ -61,6 +61,9 @@ Use startService() to start service and it stops automatically when task is done
 It executes one task at a time, If you assign multiple tasks to the same intent service, Then the task will be arranged in the queue. It handles multi threading internally and saves memory
 onHandleIntent() is default override method in case of Intent Service.
 onStartCommand() method implemented internally & onCreate(), onDestroy(), onBind() are optional
+
+### Service Lifecycle
+
 
 ### How to stop Intent Service:
 
@@ -94,3 +97,4 @@ It internally uses Job scheduler api.
 It requires WAKE_LOCK & BIND_JOB_SERVICE permissions
 onHandleWork() is default override method.
 It Runs on worker Thread or Background thread.
+
