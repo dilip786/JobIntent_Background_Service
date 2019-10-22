@@ -24,7 +24,7 @@ Worker thread or Background thread are used to perform long running operations l
 * Bound Service
 * Intent Service
 
-# Started Service:
+### Started Service:
 
 Started service basically can started by android components like Activity, Broadcast  Receiver, Content Provider, Services
 When service started can run in background indefinitely, Even the component that started is also destroyed
