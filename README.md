@@ -67,6 +67,7 @@ Runs on Main UI thread.
 ![adad](https://user-images.githubusercontent.com/10658016/67318530-3d27e600-f529-11e9-87b8-0768c8c27b1f.png)
 
 
+
 ### How to stop Intent Service:
 
 - Incase of intent service it does not stop or accept new requests through the same intent until it completes its onHandleIntent() competes the previous request.
