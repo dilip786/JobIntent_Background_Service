@@ -34,7 +34,7 @@ A simple android project that demonstrates how to implement background service.
 - Started service basically can started by android components like Activity, Broadcast  Receiver, Content Provider, Services
 - When service started can run in background indefinitely, Even the component that started is also destroyed
 - There is always one way communication in case of started service
-- 'startservice()' is used to start service & stopservice() or stopself() are used to stop service.
+- `startservice()`is used to start service & `stopservice()` or `stopself()` are used to stop service.
 - Runs on Main Ui thread
 
 ### Bound Service
@@ -77,7 +77,7 @@ Runs on Main UI thread.
 
 - Incase of intent service it does not stop or accept new requests through the same intent until it completes its onHandleIntent() competes the previous request.
 - If we try to start again same intent-service with same other actions, onHandleIntent() will only called only after when previous request finished.
--Also stopService() or stopSelf() won’t work until onHandleIntent() finishes its task.
+-Also `startservice()` or `stopSelf()`  won’t work until onHandleIntent() finishes its task.
 - Declare the service as a separate process in the manifest & And when you want to stop its execution, just kill that process. 
 
 ### How to send Data to services
@@ -103,6 +103,6 @@ Runs on Main UI thread.
 - It works in all devices (Api > 14)
 - It internally uses Job scheduler api.
 - It requires WAKE_LOCK & BIND_JOB_SERVICE permissions
-- onHandleWork() is default override method.
+- `onHandleWork()` is default override method.
 -It Runs on worker Thread or Background thread.
 
