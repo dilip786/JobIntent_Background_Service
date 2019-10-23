@@ -10,6 +10,11 @@ A simple android project that demonstrates how to implement background service.
 - By Default service runs on Main UI thread (Does not run separate  thread or process)
 - ContextWrapper class is super class of Service, Context is super class of ContextWrapper
 
+### Output
+
+![ezgif com-video-to-gif (3)](https://user-images.githubusercontent.com/10658016/67355350-b39e0580-f574-11e9-8fec-ecf791e44749.gif)
+
+
 ### Main UI Thread:
 
 - When we create an android application, the android system will create a default process, i’e default thread is created, This default thread is called as Main Thread or UI thread.
