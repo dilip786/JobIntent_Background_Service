@@ -90,7 +90,7 @@ Runs on Main UI thread.
 
 - Your service should always be accessible within your own application, Use the following attribute to access only from your 'app- android:exported:”false"'
 - Use explicit intent to start service.
-- Use LoacalBroadcastReciever to communicate with service ('LocalBroadcastManager.getInstance(this).registerReceiver()')
+- Use LoacalBroadcastReciever to communicate with service (`LocalBroadcastManager.getInstance(this).registerReceiver()`)
 
 #### Limitations
 
@@ -102,7 +102,7 @@ Runs on Main UI thread.
 - Modern way to run background service
 - It works in all devices (Api > 14)
 - It internally uses Job scheduler api.
-- It requires WAKE_LOCK & BIND_JOB_SERVICE permissions
+- It requires `WAKE_LOCK & BIND_JOB_SERVICE` permissions
 - `onHandleWork()` is default override method.
 -It Runs on worker Thread or Background thread.
 
