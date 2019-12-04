@@ -88,7 +88,7 @@ Runs on Main UI thread.
 
 #### Security concerns
 
-- Your service should always be accessible within your own application, Use the following attribute to access only from your 'app- android:exported:”false"'
+- Your service should always be accessible within your own application, Use the following attribute to access only from your ` app- android:exported:”false" `
 - Use explicit intent to start service.
 - Use LoacalBroadcastReciever to communicate with service (`LocalBroadcastManager.getInstance(this).registerReceiver()`)
 
