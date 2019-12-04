@@ -43,7 +43,7 @@ A simple android project that demonstrates how to implement background service.
 - This service exists as long as the there is at least one component bound to it.
 - When all the calling components destroyed then the service also destroyed.
 - By default it has two communication.
-- bindservice() is used to start service & unbindservice() or stopself() are used to stop service.
+- ` bindservice() ` is used to start service & ` unbindservice() ` or ` stopself() ` are used to stop service.
 - Runs on Main Ui thread
 
 #### Foreground Service
@@ -65,7 +65,7 @@ Runs on Main UI thread.
 - Use startService() to start service and it stops automatically when task is done.
 - It executes one task at a time, If you assign multiple tasks to the same intent service, Then the task will be arranged in - the queue. It handles multi threading internally and saves memory
 - onHandleIntent() is default override method in case of Intent Service.
-- onStartCommand() method implemented internally & onCreate(), onDestroy(), onBind() are optional
+- ` onStartCommand() ` method implemented internally & ` onCreate() `, ` onDestroy() `, ` onBind() ` are optional
 
 #### Service Lifecycle
 
@@ -104,5 +104,5 @@ Runs on Main UI thread.
 - It internally uses Job scheduler api.
 - It requires `WAKE_LOCK & BIND_JOB_SERVICE` permissions
 - `onHandleWork()` is default override method.
--It Runs on worker Thread or Background thread.
+- It Runs on worker Thread or Background thread.
 
